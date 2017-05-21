@@ -12,7 +12,7 @@ import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //this is for show up
+    //this is for show up hwwkk
 
     var window: UIWindow?
 
