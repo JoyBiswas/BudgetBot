@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B675E2B1A00857F24FFBB830 /* Pods_Budget_Bot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAAA62ADDC3BFE600AF4670E /* Pods_Budget_Bot.framework */; };
+		CE9DB52C1ED1B3C500BBF98E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE9DB52B1ED1B3C500BBF98E /* GoogleService-Info.plist */; };
 		F7199DFE1E38E713004988F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7199DFD1E38E713004988F0 /* AppDelegate.swift */; };
 		F7199E051E38E714004988F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7199E041E38E714004988F0 /* Assets.xcassets */; };
 		F7199E081E38E714004988F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7199E061E38E714004988F0 /* LaunchScreen.storyboard */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5DCA74E2B410EA7F83A2BB8B /* Pods-Budget Bot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget Bot.release.xcconfig"; path = "Pods/Target Support Files/Pods-Budget Bot/Pods-Budget Bot.release.xcconfig"; sourceTree = "<group>"; };
+		8D88B310DBF1690AB5EA29D4 /* Pods-Budget Bot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget Bot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budget Bot/Pods-Budget Bot.debug.xcconfig"; sourceTree = "<group>"; };
+		CE9DB52B1ED1B3C500BBF98E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAAA62ADDC3BFE600AF4670E /* Pods_Budget_Bot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budget_Bot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7199DFA1E38E713004988F0 /* Budget Bot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Budget Bot.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7199DFD1E38E713004988F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7199E041E38E714004988F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B675E2B1A00857F24FFBB830 /* Pods_Budget_Bot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EDBA3FDCC4AD4C7F2979B88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D88B310DBF1690AB5EA29D4 /* Pods-Budget Bot.debug.xcconfig */,
+				5DCA74E2B410EA7F83A2BB8B /* Pods-Budget Bot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB7E8A4E8401C3EF38BEE724 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAAA62ADDC3BFE600AF4670E /* Pods_Budget_Bot.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F7199DF11E38E711004988F0 = {
 			isa = PBXGroup;
 			children = (
 				F7199DFC1E38E713004988F0 /* Budget Bot */,
 				F7199DFB1E38E713004988F0 /* Products */,
+				2EDBA3FDCC4AD4C7F2979B88 /* Pods */,
+				DB7E8A4E8401C3EF38BEE724 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +107,7 @@
 				F7199E041E38E714004988F0 /* Assets.xcassets */,
 				F7199E061E38E714004988F0 /* LaunchScreen.storyboard */,
 				F7199E091E38E714004988F0 /* Info.plist */,
+				CE9DB52B1ED1B3C500BBF98E /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -134,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F7199E0C1E38E714004988F0 /* Build configuration list for PBXNativeTarget "Budget Bot" */;
 			buildPhases = (
+				FB57FF24A6D22E93A3A64684 /* [CP] Check Pods Manifest.lock */,
 				F7199DF61E38E711004988F0 /* Sources */,
 				F7199DF71E38E711004988F0 /* Frameworks */,
 				F7199DF81E38E711004988F0 /* Resources */,
+				FD82197021DB99A4EF02650D /* [CP] Embed Pods Frameworks */,
+				F90664873BF7AFA9652F00CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,10 +221,59 @@
 				F7199E051E38E714004988F0 /* Assets.xcassets in Resources */,
 				F78A4A8C1E3F85230059A96D /* RootBudgetPlannerViewController.xib in Resources */,
 				F7D1D1D11E3F7D0A0062B5A1 /* LoginViewController.xib in Resources */,
+				CE9DB52C1ED1B3C500BBF98E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F90664873BF7AFA9652F00CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget Bot/Pods-Budget Bot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB57FF24A6D22E93A3A64684 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FD82197021DB99A4EF02650D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Budget Bot/Pods-Budget Bot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F7199DF61E38E711004988F0 /* Sources */ = {
@@ -319,11 +398,12 @@
 		};
 		F7199E0D1E38E714004988F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D88B310DBF1690AB5EA29D4 /* Pods-Budget Bot.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7393DYRG2;
 				INFOPLIST_FILE = "Budget Bot/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.virtualreality.Budget-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -333,11 +413,12 @@
 		};
 		F7199E0E1E38E714004988F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCA74E2B410EA7F83A2BB8B /* Pods-Budget Bot.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y7393DYRG2;
 				INFOPLIST_FILE = "Budget Bot/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.virtualreality.Budget-Bot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
